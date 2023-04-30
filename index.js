@@ -112,7 +112,7 @@ todoList.addEventListener('change', (event) => {
   
 
 
-// localStorage.clear();
+localStorage.clear();
 
 
 
