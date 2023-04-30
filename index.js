@@ -76,3 +76,47 @@ function displayTodoList(){
     }
  }
 displayTodoList();
+// modifier le statut de tache afin de lui faire descendre en bas de la list
+todoList.addEventListener('change', (event) => {
+  const listItem = event.target.closest('li');
+    const listItemId = listItem.id;
+    todos.forEach((todo, index) =>{
+        if (todo.title === listItemId){
+            todo.status = event.target.checked;
+            localStorage.setItem('todos', JSON.stringify(todos));
+        }
+  if (event.target.checked) {  
+    todoList.appendChild(listItem);
+  } else {
+    todoList.insertBefore(listItem, todoList.firstChild);
+  }
+});
+})
+
+// pour supprimer les taches qu'on ne veux pas afficher au lieu d'utiliser toujours localStorage.clear();
+  const removeTodos = document.querySelectorAll('.delete');
+ removeTodos.forEach(item => {
+        item.addEventListener('click', (event) => {
+            const listItem = event.target.closest('li');
+            const todoId = listItem.id;
+            for(var i = 0; i<todos.length;i++){
+                if(todos[i].title === todoId){
+                    todos.splice(i, 1);
+                    localStorage.setItem('todos',JSON.stringify(todos)); 
+                    listItem.remove();
+                }
+            }
+        })
+             
+});
+  
+
+
+// localStorage.clear();
+
+
+
+
+
+
+  });
