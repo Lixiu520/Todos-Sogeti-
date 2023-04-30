@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --mainColor:#192386;
+    --backGroundColor: #E4F1F5;
+}
+html{
+   font-size:  62.5%;
+}
+body{
+   font-size: 1.4rem;
+   font-family: 'Quicksand', sans-serif;
+   color: var(--mainColor);
+   background-color:white ;
+   margin:8px;
+}
+header,footer{
+    background-color: var(--backGroundColor);
+    margin-top: 25px;
+    margin-bottom: 10px;;
+}
+header{
+    padding-left: 30px ;
+    padding-right: 30px;
+    padding:10px;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top:0;
+    background-color: var(--backGroundColor);
+}
+section{
+    padding-top:100px;
+}
+header>div>div>img{
+    margin: 10px 10px 10px 10px;
+}
+
+footer{
+        justify-content:space-between;
+        align-items: flex-end;
+
+}
+footer > div{
+    height: 100%;
+  
+}
+p{
+    margin:0;
+    padding: 0;
+}
+footer :first-child  p{
+    padding: 40px;
+    align-items:baseline;
+}
+footer :nth-child(2) div{
+ margin-right: 40px ;
+}
+h1{
+
+    margin-left: 40px;
+    font-size: 32px;
+    background-color: var(--backGroundColor);
+    width: 500px;
+    border: solid 2px var(--mainColor);
+    border-radius: 5%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+legend{
+    text-align: center;
+    font-size: 45px;
+   margin-bottom: 10px;;
+}
+
+
+
+figure {
+    width: 600px;
+    margin-bottom: 30px;
+    background-color: var(--backGroundColor);
+    min-height: 500px;
+    border-radius: 15%;
+    border: solid 2px var(--mainColor);
+}
+figure>button{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-style: outset;
+    background-color: var(--backGroundColor);
+    padding: 0;
+    margin: 0;
+    /* text-align: end; */
+    float: left;
+    margin-bottom: 60px;
+    margin-left: 80px;
+    border: solid 2px var(--mainColor);
+}
+form{
+    text-align: center;
+    margin: 60px;
+    width: 95%;
+    
+}
+
+label,input{
+    margin: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--mainColor);
+
+}
+
+figure.container.containerColumn {
+    margin: 0;
+    border-radius: 5%;
+}
+
+
+input{
+    border: solid 1px var(--mainColor);
+    background-color: var(--backGroundColor);
+    text-align:left;
+}
+/***********************Class********************/
+
+.container{
+    display: flex;
+
+}
+.containerRow{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.containerColumn{
+    flex-direction: column;
+}
+
+.image-container{
+    position: relative;
+    display: inline-block;
+}
+
+
+.container.containerColumn {
+    align-items: flex-start;
+    margin-left: 60px;
+}
+.flexItem2{
+    flex :2;
+    text-align: left;
+}
+.line1{
+    align-self: flex-end;
+}
+
+.flexItem3 {
+    margin: 0;
+    padding: 0;
+    width: auto; /* or adjust as needed */
+    height: auto; /* or adjust as needed */
+  }
+  
+  img.flexItem3 {
+    margin-right: 60px;
+}
+
+
+.container.containerRow.title {
+    margin-top: 30px;
+    margin: 20px;
+    width: 600px;
+    background-color: var(--backGroundColor);    
+    border-radius: 100px 0px;
+    margin: 0;
+    padding: 10px 0 10px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+img.flexItem1 {
+    margin-left: 150px;
+}
+
+.detail.container.containerColumn {
+    margin-top: 60px;
+}
+/**********************ID*********************/
+#alignementBas{
+    justify-content: space-between;
+    align-items:flex-end;
+}
+#contact {
+ justify-content: flex-start;
+}
+#contact > div, #contact > div button{
+    margin-left: 10px;
+}
+ #submit{
+    background-color: var(--backGroundColor);
+    color: var(--mainColor);
+    border:solid 1px var(--mainColor);
+    box-shadow:-10px 0 4px#192386 ;
+    border-radius: 50%;
+    margin-right: 150px;
+
+}
+#description{
+    border-radius: 5%;
+    border: solid 2px var(--mainColor);
+    width: 200px;
+    min-height: 50px;
+   background-color: var(--backGroundColor);
+    border-color: var(--mainColor);
+    color:var(--mainColor);
+    padding-left: 10px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    width: 50%;
+    resize:vertical;
+   
+}
+
+#title{
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    width: 50%;
+    /* margin-left: 50px; */
+    border-radius: 5%;
+    border: solid 2px var(--mainColor);
+    width: 250px;
+    padding-left: 10px;
+    text-align: centre;
+}
+#checkbox{
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+}

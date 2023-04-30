@@ -1,0 +1,379 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --mainColor:#192386;
+    --backGroundColor: #E4F1F5;
+}
+html{
+   font-size:  62.5%;
+}
+body{
+   font-size: 1.4rem;
+   font-family: 'Quicksand', sans-serif;
+   color: var(--mainColor);
+   background-color:white ;
+   margin:8px;
+}
+header,footer{
+   
+    margin-top: 25px;
+    margin-bottom: 10px;;
+}
+header{
+    /* padding-left: 30px ;
+    padding-right: 30px; */
+    padding:10px;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top:0;
+    background-color: var(--backGroundColor);
+}
+header>div :first-child{
+    margin-left: 20px;
+}
+header>div>div>img{
+    margin: 10px 10px 10px 10px;
+}
+section>div:first-child{
+    width: 90%;
+    margin: 1px auto;
+}
+section img{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+}
+footer{
+        justify-content:space-between;
+        align-items: flex-end;
+        background-color: var(--backGroundColor);
+}
+footer > div{
+    height: 100%;
+  
+}
+p{
+    margin:0;
+    padding: 0;
+}
+footer :first-child  p{
+    padding: 40px;
+    align-items:baseline;
+}
+footer :nth-child(2) div{
+ margin-right: 40px ;
+}
+h1{
+    text-align: center;
+    margin:0;
+    padding: 10px 0 10px ;
+    font-size: 60px;
+}
+legend{
+    
+    text-align: center;
+    font-size: 45px;
+    border-bottom: solid 2px var(--mainColor);
+    width: 90%;
+    margin-bottom: 8px;
+
+}
+
+fieldset {
+    /* color: var(--mainColor); */
+    border-color: var(--mainColor);
+    margin: 20px;
+    background-color: var(--backGroundColor);
+   
+}
+
+section>div>figure>fieldset>legend {
+    border: none;
+    text-align: left;
+    font-size: 30px;
+    margin-left: 40px;
+    max-width: fit-content;
+    padding-right: 4px;
+}
+
+figure {
+    
+    margin-bottom: 30px;
+    /* background-color: var(--backGroundColor); */
+   
+    border-radius: 5%;
+}
+figure#createTodo{
+    width: 90%;
+    min-height: 250px;
+    margin: 20px auto;
+}
+figure>ul{
+    margin:2px auto;
+}
+
+figure>button{
+    display: block;
+    width: 245px; /* change this value to adjust the size of the button */
+    height: 100px; /* change this value to adjust the size of the button */
+    border-style: none;
+    border: none;
+    background-color: var(--backGroundColor);
+    padding: 0;
+    margin: 0;
+    text-align: end;
+    float: right;
+   
+}
+form{
+    text-align: center;
+   
+    width: 100%;
+   
+}
+
+form fieldset{
+    margin:0     auto;
+    width: 100%;
+}
+ label,input{
+    font-size: 16px;
+    /* margin-bottom: 20px; */
+    color: var(--mainColor);
+    margin-left: 30px;
+
+}
+
+span{
+    padding-right: 100px;
+    font-size: 25px;
+}
+figure.container.containerColumn {
+    margin: 0;
+    border-radius: 5%;
+}
+form div >a{
+    margin-top: 10px;
+}
+a :first-child>input{
+    margin-left: 40px;
+    width: 20px;
+    height: 20px;
+    margin-right: 100px;
+}
+input{
+    border:none;
+    background-color: var(--backGroundColor);
+   
+}
+
+input[type="checkbox"]:checked + label.todoTitle {
+    text-decoration: line-through;
+  }
+
+label#status {
+    margin-top: 15px;
+}
+
+
+li input[type="checkbox"] {
+    margin-left: 30px;
+}
+
+
+button.delete {
+    width: 25px;
+    margin-right: 30px;
+  
+    background-color: var(--backGroundColor);
+    border: none;
+}
+
+label.flexItem2.todoTitle {
+    margin-right: 0;
+    padding-right: 0;
+    
+}
+span.flexItem3 {
+    margin-right: 20px;
+}
+/***********************Class********************/
+
+.container{
+    display: flex;
+
+}
+.containerRow{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.containerColumn{
+    flex-direction: column;
+}
+
+.image-container{
+    position: relative;
+    display: inline-block;
+}
+.image-container > button {
+    position: absolute;
+    top:80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color:  #E4F1F5; */
+    color: var(--mainColor);
+    padding: 10px 20px;
+    border: solid 1px var(--mainColor);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: -1em 0 .4em var(--mainColor);
+}
+
+.container.containerColumn {
+    align-items: flex-start;
+    margin-left: 60px;
+}
+.flexItem1{
+    flex:1;
+    text-align: left;
+}
+.flexItem2{
+    flex :2;
+    text-align: left;
+}
+.line1{
+    align-self: flex-end;
+}
+
+.flexItem3 {
+    margin: 0;
+    padding: 0;
+    width: auto; /* or adjust as needed */
+    height: auto; /* or adjust as needed */
+  }
+  
+  img.flexItem3 {
+    margin-right: 50px;
+}
+/* ul li  {
+    border-bottom: solid 2px var(--mainColor);
+    padding-top: 2px;
+    width: 90%;
+    margin-left: 25px;
+    
+   
+} */
+li {
+    border-bottom: solid 1px var(--mainColor);
+    width: 90%;
+    margin-left: 25px;
+}
+.todoList>li>div{
+    position: relative;
+}
+.todoList li {
+    cursor: pointer;
+  }
+  .todoList li .todoDescription{
+    background-color: var(--backGroundColor);
+    color:var(--mainColor);
+    border:solid 2px var(--mainColor);
+    border-radius: 15%;
+    display: none;
+    position: absolute;
+}
+
+.container.containerColumn.addTodo {
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+
+.addTdo >label, .addTdo >input {
+    width: 50%;
+    height: 50px;
+}
+
+
+/**********************ID*********************/
+#alignementBas{
+    justify-content: space-between;
+    align-items:flex-end;
+}
+#contact {
+ justify-content: flex-start;
+}
+#contact > div, #contact > div button{
+    margin-left: 10px;
+}
+ #submit{
+    margin-left: 200px;
+    color: white;
+    border: solid 1px #192386;
+    border-radius: 50%;
+    font-size: 100px;
+    cursor: pointer;
+    width: 100px;
+    background-color: green;
+}
+section{
+    padding-top: 100px;
+}
+section img #smaller{
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-top: 50px;
+    max-width: 30%;
+}
+
+#createTodo #title,textarea {
+    border: solid 2px var(--mainColor);
+    background-color: var(--backGroundColor);
+}
+
+#createTodo .container.containerColumn {
+    margin: 1px auto;
+}
+#review{
+    width: 100%;
+    margin-top: 10px;
+}
+legend.container.containerRow {
+    margin-left: 25px;
+}
+#createTodo label, input,textarea {
+    margin: 1px auto;
+}
+
+
+textarea#description {
+    width: 50%;
+    height: 50px;
+}
+
+input#title {
+    width: 50%;
+    height: 50px;
+}
+ #asTitle{
+    border: none;
+    text-align: left;
+    font-size: 30px;
+    margin-left: 40px;
+    max-width: fit-content;
+    padding-right: 4px;
+
+}
+#listOfTodos{
+    min-height: 600px;
+    flex:2 ;
+    width: 100%;
+}

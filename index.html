@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <header>
+        <div class="container containerRow">
+            <h4>WebFactory</h4>
+            <h4 class="center">TODOS</h4>
+            <div class="container containerRow">
+               
+                    <img  src="img/Person.png" alt="connecté">
+                    
+                    <img   src="img/menu.png" alt="Menu of TODOS">
+                    
+            </div>
+        </div>
+    </header>
+    <section >
+        <div class="container containerColumn alignItem">  
+                <figure id="createTodo">
+                    <fieldset> <legend> Add a new todo : </legend>
+                    <form id="form" action="/index.html"   method="post" class="container containerRow" >                     
+                            <div class="container containerColumn">
+                                
+                                <input type="submit" id="submit" name="submit" value="+">
+                            </div>
+                            <div class="container containerColumn addTodo">
+
+                                <label for="title" >Title * : </label>
+                                <input type="text" id="title" name="title"required>	 
+                                <label for="description">Description : </label>	
+                                <textarea type="text" id="description" name="description" > </textarea>
+                                <label > Status : <input type="checkbox" name="validation" id="status" ></label>  
+                                
+                            </div>
+                            
+                            
+                            <br>
+                            
+                    </form>
+                </fieldset>
+                </figure>
+          
+            <div class="container containerRow">
+            <div class="marginSignIn flexItem2 container containerColumn">
+                
+               
+                <figure >
+                    <fieldset id="listOfTodos">
+                        <legend id="asTitle">The list of todos : </legend>
+                   
+                        <div id="review">
+                        
+                                <legend class="container containerRow"> 
+                                    <span class="flexItem1">Status</span>
+                                    <span class="flexItem2">Title</span>
+                                    <span class="flexItem3">Delete</span>
+                                </legend>
+                                    <ul class ="todoList">   
+                                    </ul> 
+                        </div>
+                    </fieldset>
+                </figure>
+            </div>
+            <img src="img/toomanytodo.png" alt="Too many to DO" class="flexItem1">
+            </div>
+        </div>
+    </section>
+    
+    <footer class = "container containerRow">
+        
+        <div class="container containerRow">
+            <p>Copyright  ©2023</p>
+            <p>Privacy</p>
+            <p>Cookie Management</p>
+        </div>
+        <div class="container containerColumn droite">
+            <div  id="contact" class="container containerRow " id="alignementBas">
+                <div>Contactez-nous</div>
+                <div>
+                    <button><img src="img/email.png" alt="email"></button>
+                    <button><img src="img/twitter.png" alt="twitter"></button>
+                    <button><img src="img/openmoji_linkedin.png" alt="linkedin"></button>
+                    <button><img src="img/ri_facebook-circle-line.png" alt="facebook"></button>
+                    <button><img src="img/prime_instagram.png" alt="instegram"></button>
+                </div>  
+            </div>
+            <div class ="container containerRow">
+            <p><img src="img/ic_outline-edit-location-alt.png" alt="location"> adresse: XXX, rue XXX XXX France</p> 
+            <p><img src="img/map_volume-control-telephone.png" alt="telephone"> 05xxxxxxxx</p> 
+            </div>
+        </div>
+    
+    </footer>
+    <script src="review.js"></script>
+</body>
+</html>
