@@ -323,6 +323,7 @@ li {
     cursor: pointer;
     width: 100px;
     background-color: green;
+     padding-bottom: 20px;
 }
 section{
     padding-top: 100px;
