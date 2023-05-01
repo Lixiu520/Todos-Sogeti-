@@ -107,16 +107,8 @@ todoList.addEventListener('change', (event) => {
                 }
             }
         })
-             
 });
   
-
-
 localStorage.clear();
-
-
-
-
-
 
   });
