@@ -25,7 +25,8 @@ header,footer{
     margin-bottom: 10px;;
 }
 header{
-  
+    /* padding-left: 30px ;
+    padding-right: 30px; */
     padding:10px;
     position: fixed;
     width: 100%;
@@ -45,7 +46,7 @@ section>div:first-child{
 }
 section img{
     padding-left: 100px;
-    padding-right: 100px;
+   
     margin-bottom: 20px;
 }
 footer{
@@ -299,6 +300,7 @@ li {
 .addTdo >label, .addTdo >input {
     width: 50%;
     height: 50px;
+    padding-bottom: 10px;
 }
 
 
@@ -322,7 +324,6 @@ li {
     cursor: pointer;
     width: 100px;
     background-color: green;
-     padding-bottom: 20px;
 }
 section{
     padding-top: 100px;
@@ -351,6 +352,7 @@ legend.container.containerRow {
 }
 #createTodo label, input,textarea {
     margin: 1px auto;
+    margin-bottom: 10px;
 }
 
 
@@ -377,3 +379,94 @@ input#title {
     flex:2 ;
     width: 100%;
 }
+
+/* For screens smaller than 600px */
+@media (max-width: 458px) {
+  
+    
+    h4 {
+      font-size: 1.2rem;
+      /* margin: 0.5rem; */
+    }
+    
+    /* adjust padding for better readability */
+    .addTodo, .containerRow {
+      padding: 0.5rem;
+    }
+    
+    /* adjust font size and padding for better readability */
+    label {
+      font-size: 0.8rem;
+      padding: 0.2rem;
+    }
+    legend{
+        font-size: 15px;
+    }
+    
+    /* adjust font size for better readability */
+    ul.todoList li {
+      font-size: 0.8rem;
+    }
+    
+    /* adjust font size and margin for better readability */
+    img.flexItem1 {
+      width: 50%;
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+  }
+  
+  /* For screens between 600px and 1024px */
+  @media (min-width: 458px) and (max-width: 1024px) {
+    /* adjust padding for better readability */
+    .addTodo, .containerRow {
+      padding: 1rem;
+    }
+    
+    /* adjust font size and padding for better readability */
+    label {
+      font-size: 1rem;
+      /* padding: 0.5rem; */
+    }
+    
+    /* adjust font size for better readability */
+    ul.todoList li {
+      font-size: 1rem;
+    }
+    
+    /* adjust font size and margin for better readability */
+    img.flexItem1 {
+      width: 70%;
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+    }
+  }
+  
+  /* For screens larger than 1024px */
+  @media (min-width: 1024px) {
+    /* reset padding to default value */
+    .addTodo, .containerRow {
+      padding: 1rem;
+    }
+    
+    /* reset font size and padding to default value */
+    label {
+      font-size: 20px;
+      /* padding: 1rem; */
+    }
+    legend{
+        font-size: 40px;
+    }
+    
+    /* reset font size to default value */
+    ul.todoList li {
+      font-size: 1.2rem;
+    }
+    
+    /* reset font size and margin to default value */
+    img.flexItem1 {
+      width: 90%;
+      font-size: 2rem;
+      margin: 0;
+    }
+  }
