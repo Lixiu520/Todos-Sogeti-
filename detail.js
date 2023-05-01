@@ -1,15 +1,18 @@
-class Todo {
-    constructor(title, description,status) {
-      this.title = title;
-      this.description = description;
-      this.status = status; 
-    }
+// class Todo {
+//     constructor(title, description,status) {
+//       this.title = title;
+//       this.description = description;
+//       this.status = status; 
+//     }
    
-    toggleCompleted() {
-      this.status = !this.status;
-    }
+//     toggleCompleted() {
+//       this.status = !this.status;
+//     }
   
-  }
+//   }
+
+import Todo from './Todo';
+
 const  todos = JSON.parse(localStorage.getItem('todos')) ;//pour recuperer les donné sur localstorage
 console.log(todos);
 const todo1 = new Todo("How to use the application TODOS","click the plus to add a new task, once the task is created, it goes to the top of the todo list. ",false)
