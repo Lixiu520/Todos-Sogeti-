@@ -25,9 +25,7 @@ header,footer{
     margin-bottom: 10px;;
 }
 header{
-    /* padding-left: 30px ;
-    padding-right: 30px; */
-    padding:10px;
+  
     position: fixed;
     width: 100%;
     margin-bottom: 10px;
